@@ -11,20 +11,11 @@
 name: Build OpenWrt
 
 on:
-  repository_dispatch:
-  release:
-    types: published
   push:
-    branches:
-      - main
-    paths:
-      - 'k2p_ap.config'
+    branches: [ main ]
+    paths: [ main ]
+
   workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
 #  schedule:
 #    - cron: 0 8 * * 5
 #  watch:
