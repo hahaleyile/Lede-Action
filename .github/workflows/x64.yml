@@ -16,6 +16,7 @@ on:
     paths: [ main ]
 
   workflow_dispatch:
+
 #  schedule:
 #    - cron: 0 8 * * 5
 #  watch:
@@ -181,4 +182,3 @@ jobs:
           delete_tags: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
