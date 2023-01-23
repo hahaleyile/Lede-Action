@@ -12,8 +12,10 @@ name: Build OpenWrt
 
 on:
   push:
-    branches: [ main ]
-    paths: [ main ]
+    branches:
+      - main
+    paths:
+      - main
 
   workflow_dispatch:
 
